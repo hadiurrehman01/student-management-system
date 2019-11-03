@@ -1,0 +1,31 @@
+<template>
+    <div>
+        <div class="preloader">
+            <div class="lds-ripple">
+                <div class="lds-pos"></div>
+                <div class="lds-pos"></div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- Main wrapper - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full" data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+            <custom-header />
+            <custom-sidebar />
+            <slot />
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Wrapper -->
+        <!-- ============================================================== -->
+    </div>
+</template>
+<script>
+    import Header from "./Header.vue";
+    import Sidebar from "./Sidebar.vue";
+    export default {
+        name : "Baselayout",
+        components : {
+            'custom-header' : Header, 'custom-sidebar' : Sidebar
+        }
+    }
+</script>
