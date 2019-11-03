@@ -11,7 +11,7 @@
     "bootstrap-vue": "^2.0.2",
     "chartist": "^0.11.4",
     "core-js": "^2.6.5",
-    "jquery": "^1.9.1",
+    "jquery": "^3.4.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
